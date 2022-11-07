@@ -11,8 +11,12 @@
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
+  @include desktop{
+      width: 528px;
+      min-height: 581px;
+  }
   background-color: var(--first-color);
   position: absolute;
   top: 50%;
@@ -141,7 +145,10 @@
 }
 
 .modal-check-label {
-  font-size: 14px;
+  font-size: 12px;
+  @include desktop{
+    font-size: 14px;
+  }
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -175,7 +182,11 @@
 }
 
 .policy {
-  font-size: 14px;
+  font-size: 12px;
+  @include desktop{
+    font-size: 14px;
+  }
+  
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
