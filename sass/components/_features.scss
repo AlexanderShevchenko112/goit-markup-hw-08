@@ -1,0 +1,106 @@
+.features-antenna {
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
+  &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-image: url("../images/antenna\ 1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--filter-btn-bgc);
+    margin-bottom: 30px;
+  }
+}
+
+.features-clock {
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
+  &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-image: url("../images/clock\ 1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--filter-btn-bgc);
+    margin-bottom: 30px;
+  }
+}
+
+.features-diagram {
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
+  &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-image: url("../images/diagram\ 1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--filter-btn-bgc);
+    margin-bottom: 30px;
+  }
+}
+
+.features-astronaut {
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
+  &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-image: url("../images/astronaut\ 1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--filter-btn-bgc);
+    margin-bottom: 30px;
+  }
+}
+
+.features-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  text-align: center;
+  @include tablet {
+    text-align: left;
+  }
+}
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  max-width: 450px;
+  margin-top: 10px;
+}
