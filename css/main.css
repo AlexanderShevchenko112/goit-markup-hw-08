@@ -254,6 +254,32 @@ body {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .header-mail-icon {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-mail-icon {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-tel-icon {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-tel-icon {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .smartphone:hover,
 .smartphone:focus {
   fill: var(--second-color);
@@ -321,6 +347,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
+@media screen and (min-width: 320px) {
+  .modal-tel {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 394px) {
+  .modal-tel {
+    font-size: 34px;
+  }
+}
 
 .modal-mail {
   font-weight: 500;
@@ -331,7 +367,7 @@ body {
 }
 
 .menu-modal-item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 55px;
 }
 
 .modal-auth-tel {
@@ -360,6 +396,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-color);
   padding: 0 10px;
+}
+@media screen and (min-width: 320px) {
+  .menu-social-link {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .menu-social-link {
+    font-size: 18px;
+  }
 }
 
 .first-link {
@@ -587,7 +633,6 @@ body {
 
 .services {
   display: none;
-  padding-bottom: 94px;
 }
 @media screen and (min-width: 1200px) {
   .services {
@@ -599,6 +644,7 @@ body {
   display: flex;
   gap: 30px;
   justify-content: space-between;
+  padding-bottom: 94px;
 }
 
 .services-title {
@@ -810,7 +856,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer-contacts {
-    margin: 0;
+    margin-bottom: 60px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-contacts {
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -818,7 +871,15 @@ body {
     margin-right: 70px;
   }
 }
+@media screen and (min-width: 320px) {
+  .footer-contacts {
+    margin-bottom: 60px;
+  }
+}
 
+.footer-top {
+  align-items: baseline;
+}
 @media screen and (min-width: 768px) {
   .footer-top {
     display: flex;
@@ -828,7 +889,17 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer-socials {
-    padding-top: 12px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 320px) {
+  .footer-socials {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-socials {
+    margin-bottom: 0;
   }
 }
 
@@ -852,7 +923,6 @@ body {
   display: flex;
   gap: 10px;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .footer-social-icon {
@@ -914,7 +984,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .adress-item {
-    width: 231px;
+    width: 207px;
     text-align: left;
   }
 }
@@ -941,7 +1011,6 @@ body {
 .footer-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer-list {
@@ -987,7 +1056,6 @@ body {
 }
 
 .footer-input {
-  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1002,7 +1070,12 @@ body {
 }
 @media screen and (min-width: 320px) {
   .footer-input {
-    width: 300px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-input {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1043,6 +1116,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-right {
     flex-direction: row;
+    gap: 12px;
   }
 }
 
@@ -1079,7 +1153,6 @@ body {
 }
 
 .modal {
-  width: 450px;
   min-height: 609px;
   background-color: var(--first-color);
   position: absolute;
@@ -1088,6 +1161,26 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--duration) var(--function);
   padding: 40px;
+}
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

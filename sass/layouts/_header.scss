@@ -139,6 +139,27 @@
   fill: currentColor;
 }
 
+.header-mail-icon {
+  @include tablet {
+    width: 14px;
+    height: 10px;
+  }
+  @include desktop {
+    width: 16px;
+    height: 12px;
+  }
+}
+.header-tel-icon {
+  @include tablet {
+    width: 10px;
+    height: 14px;
+  }
+  @include desktop {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .smartphone:hover,
 .smartphone:focus {
   fill: var(--second-color);
@@ -199,6 +220,12 @@
 .modal-tel {
   font-weight: 500;
   font-size: 34px;
+  @media screen and (min-width: 320px) {
+    font-size: 30px;
+  }
+  @media screen and (min-width: 394px) {
+    font-size: 34px;
+  }
   line-height: 1.2px;
   letter-spacing: 0.02em;
   color: var(--second-color);
@@ -212,7 +239,7 @@
 }
 
 .menu-modal-item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 55px;
 }
 
 .modal-auth-tel {
@@ -236,6 +263,12 @@
 .menu-social-link {
   font-weight: 500;
   font-size: 18px;
+  @media screen and (min-width: 320px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 420px) {
+    font-size: 18px;
+  }
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--second-color);

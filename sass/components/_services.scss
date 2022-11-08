@@ -3,13 +3,13 @@
   @include desktop {
     display: contents;
   }
-  padding-bottom: 94px;
 }
 
 .services-list {
   display: flex;
   gap: 30px;
   justify-content: space-between;
+  padding-bottom: 94px;
 }
 
 .services-title {
