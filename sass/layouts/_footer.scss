@@ -15,19 +15,21 @@
 
 .footer-contacts {
   margin: 0 auto;
-  @include tablet {
+  @media screen and(min-width:320px) {
     margin-bottom: 60px;
-    margin-right: 0;
-    margin-left: 0;
   }
   @include mobile {
     margin-bottom: 60px;
   }
+  @include tablet {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
   @include desktop {
     margin-right: 70px;
-  }
-  @media screen and (min-width: 320px) {
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 }
 
@@ -35,17 +37,25 @@
   @include tablet {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 60px;
   }
   align-items: baseline;
+  @media screen and (min-width: 320px) {
+    margin-bottom: 60px;
+  }
+  @include mobile {
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .footer-socials {
   @include desktop {
     margin-bottom: 0;
   }
-  @media screen and (min-width: 320px) {
-    margin-bottom: 60px;
-  }
+
   @include tablet {
     margin-bottom: 0;
   }
@@ -113,10 +123,6 @@
   color: var(--second-color);
 }
 
-.adress {
-  margin-bottom: 9px;
-}
-
 .adress-item {
   @include desktop {
     width: 207px;
@@ -154,25 +160,24 @@
 .footer-list {
   display: flex;
   flex-direction: column;
-
+  @media screen and(min-width:320px) {
+    gap: 8px;
+  }
+  @include tablet {
+    gap: 8px;
+  }
   @include desktop {
+    gap: 9px;
     margin-bottom: 0;
   }
 }
 
 .footer-item-mail {
   margin: 0 auto;
-  @include mobile {
-    margin-bottom: 8px;
-  }
-  @include tablet {
-    margin-bottom: 8px;
-  }
+
   @include desktop {
-    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 9px;
   }
 }
 

@@ -4,16 +4,15 @@
   gap: 8px;
   justify-content: left;
   margin-bottom: 40px;
-  @include tablet{
+  @include tablet {
     justify-content: center;
     margin-bottom: 30px;
   }
-  @include desktop{
+  @include desktop {
     justify-content: center;
     margin-bottom: 50px;
   }
 }
-
 
 .filter-btn {
   font-family: inherit;
@@ -40,8 +39,14 @@
   }
 }
 
-.extra-class{
-  @media screen and (min-width:450px){
+.extra-class {
+  @media screen and (min-width: 450px) {
     margin-right: 10px;
+  }
+  @include tablet {
+    margin-right: 0;
+  }
+  @include desktop {
+    margin-right: 0;
   }
 }

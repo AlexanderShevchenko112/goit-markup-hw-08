@@ -636,7 +636,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .services {
-    display: contents;
+    display: block;
+    padding-bottom: 94px;
   }
 }
 
@@ -644,7 +645,6 @@ body {
   display: flex;
   gap: 30px;
   justify-content: space-between;
-  padding-bottom: 94px;
 }
 
 .services-title {
@@ -751,7 +751,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 10px;
 }
 
 .social-icon {
@@ -854,11 +854,9 @@ body {
 .footer-contacts {
   margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
   .footer-contacts {
     margin-bottom: 60px;
-    margin-right: 0;
-    margin-left: 0;
   }
 }
 @media screen and (min-width: 480px) {
@@ -866,14 +864,17 @@ body {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     margin-right: 70px;
-  }
-}
-@media screen and (min-width: 320px) {
-  .footer-contacts {
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 }
 
@@ -884,17 +885,28 @@ body {
   .footer-top {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .footer-top {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-top {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-top {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-socials {
     margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 320px) {
-  .footer-socials {
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -968,10 +980,6 @@ body {
   color: var(--second-color);
 }
 
-.adress {
-  margin-bottom: 9px;
-}
-
 .adress-item {
   display: block;
   font-style: normal;
@@ -1012,8 +1020,19 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 320px) {
+  .footer-list {
+    gap: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-list {
+    gap: 8px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-list {
+    gap: 9px;
     margin-bottom: 0;
   }
 }
@@ -1021,22 +1040,10 @@ body {
 .footer-item-mail {
   margin: 0 auto;
 }
-@media screen and (min-width: 480px) {
-  .footer-item-mail {
-    margin-bottom: 8px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-item-mail {
-    margin-bottom: 8px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-item-mail {
-    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 9px;
   }
 }
 
@@ -1438,6 +1445,16 @@ body {
 @media screen and (min-width: 450px) {
   .extra-class {
     margin-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .extra-class {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .extra-class {
+    margin-right: 0;
   }
 }
 
